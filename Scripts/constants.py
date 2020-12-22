@@ -8,10 +8,18 @@ SCREEN_FILL = (134,97,97)
 
 FRAMERATE = 60
 
+BLACK = (0, 0, 0)
+
 class PLAYER:
     SPRITES = {
         'idle': '../Sprites/Player/idle_1.png'
     }
+
+    OFFSET_X = -19
+    OFFSET_Y = -65
+
+    WIDTH = pygame.image.load(SPRITES['idle']).get_width()
+    HEIGHT = pygame.image.load(SPRITES['idle']).get_height()
 
 class TILES:
     # RED = {
