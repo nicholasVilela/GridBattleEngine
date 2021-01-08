@@ -15,33 +15,22 @@ class Player:
         'idle': '../Sprites/Player/idle_1.png'
     }
 
-    OFFSET_X = 12
+    OFFSET_X = -19
     OFFSET_Y = -65
 
     WIDTH = pygame.image.load(SPRITES['idle']).get_width()
     HEIGHT = pygame.image.load(SPRITES['idle']).get_height()
-
-class Enemy:
-    SPRITES = {
-        'ghost': '../Sprites/Enemies/Enemy_Ghost.png'
-    }
 
 class Tiles:
     NORMAL = {
         'red': '../Sprites/Map/tile_normal_red.png',
         'blue': '../Sprites/Map/tile_normal_blue.png',
         'red_2': '../Sprites/Map/tile_normal_red_2.png',
-        'blue_2': '../Sprites/Map/tile_normal_blue_2.png',
-        'red_3': '../Sprites/Map/tile_red_normal_2.png',
-        'blue_3': '../Sprites/Map/tile_blue_normal_2.png'
+        'blue_2': '../Sprites/Map/tile_normal_blue_2.png'
     }
 
 
-    # WIDTH = pygame.image.load(NORMAL['red']).get_width()
-    # HEIGHT = pygame.image.load(NORMAL['red']).get_height()
-
+    WIDTH = pygame.image.load(NORMAL['red']).get_width()
+    HEIGHT = pygame.image.load(NORMAL['red']).get_height()
     # WIDTH = pygame.image.load(NORMAL['red_2']).get_width()
     # HEIGHT = pygame.image.load(NORMAL['red_2']).get_height()
-
-    WIDTH = pygame.image.load(NORMAL['red_3']).get_width()
-    HEIGHT = pygame.image.load(NORMAL['red_3']).get_height()
